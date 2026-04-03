@@ -1,0 +1,89 @@
+QSVM: Hybrid Quantum-Classical Simulation with CUDA-Q
+====================================================
+
+This repository contains a set of quantum machine learning experiments built around CUDA-Q, including a quantum neural network, classical baselines, ensemble experiments, and hyperparameter tuning workflows.
+
+The project is organized as a practical research workspace rather than a polished package. Most scripts can be run directly, and several markdown files document the results and implementation details of past experiments.
+
+What is here
+------------
+
+- `quantum_nn.py`: main quantum neural network training and inference workflow.
+- `ensemble_model.py`: hybrid quantum + classical ensemble logic.
+- `hyperparameter_tuning.py`: search script used to explore model settings.
+- `hyperparameter_tuning_simple.py`: lighter-weight tuning experiment.
+- `optimal_qnn_config.py`: best known configuration discovered during tuning.
+- `minimal_nn.py` and `nn.py`: classical neural network baselines.
+- `benchmark_baselines.py`: classical baseline comparison script.
+- `test_circuit.py`, `test_data.py`, `test_gpu.py`: utility and verification scripts.
+- `README_RESULTS.md`, `BENCHMARK_REPORT.md`, `HYPERPARAMETER_TUNING_REPORT.md`, and related documents: experiment summaries and analysis.
+- `TUNING_SUMMARY.txt`: compact human-readable summary of the tuning run.
+
+Requirements
+------------
+
+The code was developed in a Python environment with CUDA-Q and common data science packages installed. Typical dependencies include:
+
+- Python 3.12
+- CUDA-Q
+- NumPy
+- SciPy
+- scikit-learn
+- pandas
+- matplotlib
+- seaborn
+- tqdm
+
+If you are using the included virtual environment, activate it before running scripts:
+
+```bash
+source /home/magic/lanl_project/myenv/bin/activate
+```
+
+Quick start
+-----------
+
+1. Activate the Python environment.
+2. Move into the project directory.
+3. Run the script you care about.
+
+Examples:
+
+```bash
+python quantum_nn.py
+python ensemble_model.py
+python hyperparameter_tuning.py
+python benchmark_baselines.py
+```
+
+What to run first
+-----------------
+
+If you are new to the project, start here:
+
+1. Read `README_RESULTS.md` for the latest summary of outcomes.
+2. Read `TUNING_SUMMARY.txt` for the most compact tuning overview.
+3. Run `quantum_nn.py` to reproduce the core quantum model workflow.
+4. Run `ensemble_model.py` if you want the hybrid quantum + classical experiment.
+
+Project layout
+--------------
+
+- Core model code lives in the Python scripts at the repository root.
+- Result summaries and analysis live in the markdown and text report files.
+- Generated plots, logs, checkpoints, and tuning outputs are intentionally excluded from the cleaned repository.
+
+Notes for new users
+-------------------
+
+- The repository is research-oriented, so some scripts assume prior experiment outputs or a working CUDA-Q backend.
+- If a script references a checkpoint or JSON artifact, check whether that artifact is meant to be generated locally before running the script.
+- The cleaned repository includes a `.gitignore` file to keep logs, plots, checkpoints, caches, and other generated outputs out of version control.
+
+Suggested next steps
+--------------------
+
+- Run the baseline scripts and compare their outputs.
+- Review the tuning and benchmark reports to understand the design choices.
+- Adjust `optimal_qnn_config.py` if you want to try a different quantum architecture.
+
