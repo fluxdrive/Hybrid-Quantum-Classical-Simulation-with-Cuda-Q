@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.log
+*.png
+*.zip
+myenv/
+benchmark_results.json
+hyperparameter_tuning_analysis.json
+hyperparameter_tuning_results.csv
+hyperparameter_tuning_results.json
+qnn_best_checkpoint.json
+qnn_training_history.json
