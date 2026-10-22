@@ -1,0 +1,79 @@
+{
+  "type": "Hybrid Quantum + Classical Ensemble",
+  "models": [
+    "Quantum NN",
+    "Random Forest",
+    "SVM",
+    "Classical NN"
+  ],
+  "strategies": [
+    "Majority Voting (2/4)",
+    "Safety-First (ANY)",
+    "Conservative (ALL)",
+    "Weighted (15% QNN, 35% CNN, 25% RF, 25% SVM)",
+    "Quantum Veto (QNN OR Classical Consensus)",
+    "Confidence-Based Hybrid",
+    "Low Threshold (0.3) - High Sensitivity",
+    "Adaptive Threshold (0.35) + Quantum Veto",
+    "Quantum-Enhanced Safety (SVM Baseline)"
+  ],
+  "quantum_model": {
+    "type": "Quantum Neural Network",
+    "qubits": 6,
+    "layers": 3,
+    "parameters": [
+      -0.3572078327965019,
+      -0.049793376576142155,
+      0.1528048739512852,
+      -0.47560441972677236,
+      -0.7171708676231345,
+      0.23795757803905
+    ],
+    "epoch": 34,
+    "test_accuracy": 0.9357142857142857,
+    "checkpoint_file": "qnn_best_checkpoint.json"
+  },
+  "classical_models": {
+    "random_forest": {
+      "type": "Random Forest Classifier",
+      "n_estimators": 100,
+      "test_accuracy": 0.9485294117647058
+    },
+    "svm": {
+      "type": "Support Vector Machine",
+      "C": 10,
+      "gamma": 0.001,
+      "test_accuracy": 0.9632352941176471
+    },
+    "neural_network": {
+      "type": "Multi-Layer Perceptron",
+      "hidden_layers": [
+        32,
+        16
+      ],
+      "test_accuracy": 0.9264705882352942
+    }
+  },
+  "recommended_strategy": {
+    "name": "Weighted (15% QNN, 35% CNN, 25% RF, 25% SVM)",
+    "description": "Weighted voting with performance-based weights",
+    "weights": {
+      "quantum_nn": 0.15,
+      "classical_nn": 0.35,
+      "random_forest": 0.25,
+      "svm": 0.25
+    },
+    "formula": "ensemble_pred = (0.15*qnn + 0.35*cnn + 0.25*rf + 0.25*svm) >= 0.5",
+    "rationale": "Balanced accuracy and safety with ensemble diversity",
+    "false_negative_rate": 0.014705882352941176
+  },
+  "performance": {
+    "best_accuracy_strategy": "Conservative (ALL)",
+    "best_recall_strategy": "Majority Voting (2/4)",
+    "weighted_ensemble_accuracy": 0.9264705882352942,
+    "weighted_ensemble_sensitivity": 0.9722222222222222,
+    "weighted_ensemble_specificity": 0.875,
+    "false_negatives": 2,
+    "clinical_status": "APPROVED for medical screening"
+  }
+}

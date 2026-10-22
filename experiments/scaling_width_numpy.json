@@ -1,0 +1,2611 @@
+{
+ "part": "width",
+ "backend": "numpy",
+ "args": {
+  "part": "width",
+  "backend": "numpy",
+  "targets": [
+   "qpp-cpu",
+   "nvidia"
+  ],
+  "min_qubits": 4,
+  "max_qubits": 28,
+  "step": 2,
+  "batch": 64,
+  "reps": 3,
+  "time_budget": 20.0,
+  "widths": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   10,
+   12
+  ],
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "epochs": 80,
+  "workers": 2,
+  "samples": 200,
+  "layers": [
+   3
+  ],
+  "inits": [
+   "uniform"
+  ],
+  "entanglers": [
+   "ring",
+   "brick"
+  ],
+  "out": "experiments/scaling_width_numpy.json"
+ },
+ "summary": [
+  {
+   "entangler": "ring",
+   "init": "uniform",
+   "n_qubits": 2,
+   "n_features": 4,
+   "n_params": 14,
+   "pca_variance": 0.7922,
+   "qnn_acc": [
+    0.9561333333333334,
+    0.01755002374167436
+   ],
+   "qnn_sens": [
+    0.9444666666666667,
+    0.03635510051331629
+   ],
+   "qnn_auc": [
+    0.9935999999999999,
+    0.004063249930782023
+   ],
+   "logreg_acc": [
+    0.9619666666666666,
+    0.005080682368868724
+   ],
+   "train_seconds": 5.166666666666667
+  },
+  {
+   "entangler": "ring",
+   "init": "uniform",
+   "n_qubits": 3,
+   "n_features": 6,
+   "n_params": 20,
+   "pca_variance": 0.8872,
+   "qnn_acc": [
+    0.9795666666666666,
+    0.005080682368868724
+   ],
+   "qnn_sens": [
+    0.9603333333333333,
+    0.013740936406713054
+   ],
+   "qnn_auc": [
+    0.9977,
+    0.0013000000000000234
+   ],
+   "logreg_acc": [
+    0.9590666666666667,
+    0.010103629710818428
+   ],
+   "train_seconds": 6.3999999999999995
+  },
+  {
+   "entangler": "ring",
+   "init": "uniform",
+   "n_qubits": 4,
+   "n_features": 8,
+   "n_params": 26,
+   "pca_variance": 0.927,
+   "qnn_acc": [
+    0.9707666666666667,
+    0.010161364737737448
+   ],
+   "qnn_sens": [
+    0.9444666666666667,
+    0.013740936406713119
+   ],
+   "qnn_auc": [
+    0.9931999999999999,
+    0.0028160255680657283
+   ],
+   "logreg_acc": [
+    0.9649,
+    0.00880000000000003
+   ],
+   "train_seconds": 7.766666666666667
+  },
+  {
+   "entangler": "ring",
+   "init": "uniform",
+   "n_qubits": 5,
+   "n_features": 10,
+   "n_params": 32,
+   "pca_variance": 0.9514,
+   "qnn_acc": [
+    0.9707666666666667,
+    0.02819473946205805
+   ],
+   "qnn_sens": [
+    0.9523999999999999,
+    0.041222809220139225
+   ],
+   "qnn_auc": [
+    0.9946,
+    0.0036373066958946903
+   ],
+   "logreg_acc": [
+    0.9766333333333334,
+    0.010161364737737448
+   ],
+   "train_seconds": 10.6
+  },
+  {
+   "entangler": "ring",
+   "init": "uniform",
+   "n_qubits": 6,
+   "n_features": 12,
+   "n_params": 38,
+   "pca_variance": 0.9712,
+   "qnn_acc": [
+    0.9795333333333334,
+    0.013398631770943383
+   ],
+   "qnn_sens": [
+    0.9682666666666666,
+    0.013740936406713054
+   ],
+   "qnn_auc": [
+    0.9954666666666666,
+    0.0018583146486355403
+   ],
+   "logreg_acc": [
+    0.9795333333333334,
+    0.013398631770943383
+   ],
+   "train_seconds": 12.133333333333333
+  },
+  {
+   "entangler": "ring",
+   "init": "uniform",
+   "n_qubits": 8,
+   "n_features": 16,
+   "n_params": 50,
+   "pca_variance": 0.9893,
+   "qnn_acc": [
+    0.9737,
+    0.00880000000000003
+   ],
+   "qnn_sens": [
+    0.9523999999999999,
+    0.023799999999999988
+   ],
+   "qnn_auc": [
+    0.9962333333333334,
+    0.0013279056191361212
+   ],
+   "logreg_acc": [
+    0.9795333333333334,
+    0.013398631770943383
+   ],
+   "train_seconds": 38.0
+  },
+  {
+   "entangler": "ring",
+   "init": "uniform",
+   "n_qubits": 10,
+   "n_features": 20,
+   "n_params": 62,
+   "pca_variance": 0.9958,
+   "qnn_acc": [
+    0.9590666666666667,
+    0.0253456768174246
+   ],
+   "qnn_sens": [
+    0.9682666666666666,
+    0.013740936406713054
+   ],
+   "qnn_auc": [
+    0.9947333333333334,
+    0.005234819321937811
+   ],
+   "logreg_acc": [
+    0.9766,
+    0.013387680904473327
+   ],
+   "train_seconds": 201.03333333333333
+  },
+  {
+   "entangler": "ring",
+   "init": "uniform",
+   "n_qubits": 12,
+   "n_features": 24,
+   "n_params": 74,
+   "pca_variance": 0.9989,
+   "qnn_acc": [
+    0.9269,
+    0.026775361808946657
+   ],
+   "qnn_sens": [
+    0.9127000000000001,
+    0.049599697579723226
+   ],
+   "qnn_auc": [
+    0.9815999999999999,
+    0.008847598544237861
+   ],
+   "logreg_acc": [
+    0.9707666666666667,
+    0.013442222038537177
+   ],
+   "train_seconds": 1183.6000000000001
+  },
+  {
+   "entangler": "brick",
+   "init": "uniform",
+   "n_qubits": 2,
+   "n_features": 4,
+   "n_params": 14,
+   "pca_variance": 0.7922,
+   "qnn_acc": [
+    0.9649,
+    0.0
+   ],
+   "qnn_sens": [
+    0.9603333333333333,
+    0.013740936406713054
+   ],
+   "qnn_auc": [
+    0.9964666666666666,
+    0.0013613718571108277
+   ],
+   "logreg_acc": [
+    0.9619666666666666,
+    0.005080682368868724
+   ],
+   "train_seconds": 4.3999999999999995
+  },
+  {
+   "entangler": "brick",
+   "init": "uniform",
+   "n_qubits": 3,
+   "n_features": 6,
+   "n_params": 20,
+   "pca_variance": 0.8872,
+   "qnn_acc": [
+    0.9707666666666667,
+    0.005080682368868724
+   ],
+   "qnn_sens": [
+    0.9524,
+    0.0
+   ],
+   "qnn_auc": [
+    0.9977666666666667,
+    0.0009237604307033636
+   ],
+   "logreg_acc": [
+    0.9590666666666667,
+    0.010103629710818428
+   ],
+   "train_seconds": 6.066666666666667
+  },
+  {
+   "entangler": "brick",
+   "init": "uniform",
+   "n_qubits": 4,
+   "n_features": 8,
+   "n_params": 26,
+   "pca_variance": 0.927,
+   "qnn_acc": [
+    0.9590666666666667,
+    0.013398631770943381
+   ],
+   "qnn_sens": [
+    0.9444666666666667,
+    0.03635510051331629
+   ],
+   "qnn_auc": [
+    0.9944666666666667,
+    0.0020404247923737242
+   ],
+   "logreg_acc": [
+    0.9649,
+    0.00880000000000003
+   ],
+   "train_seconds": 8.966666666666667
+  },
+  {
+   "entangler": "brick",
+   "init": "uniform",
+   "n_qubits": 5,
+   "n_features": 10,
+   "n_params": 32,
+   "pca_variance": 0.9514,
+   "qnn_acc": [
+    0.9590666666666667,
+    0.013398631770943381
+   ],
+   "qnn_sens": [
+    0.9127333333333333,
+    0.036355100513316335
+   ],
+   "qnn_auc": [
+    0.9959000000000001,
+    0.0008544003745317695
+   ],
+   "logreg_acc": [
+    0.9766333333333334,
+    0.010161364737737448
+   ],
+   "train_seconds": 9.466666666666667
+  },
+  {
+   "entangler": "brick",
+   "init": "uniform",
+   "n_qubits": 6,
+   "n_features": 12,
+   "n_params": 38,
+   "pca_variance": 0.9712,
+   "qnn_acc": [
+    0.9795666666666666,
+    0.005080682368868724
+   ],
+   "qnn_sens": [
+    0.9524,
+    0.0
+   ],
+   "qnn_auc": [
+    0.9985666666666666,
+    0.0005131601439446932
+   ],
+   "logreg_acc": [
+    0.9795333333333334,
+    0.013398631770943383
+   ],
+   "train_seconds": 12.966666666666667
+  },
+  {
+   "entangler": "brick",
+   "init": "uniform",
+   "n_qubits": 8,
+   "n_features": 16,
+   "n_params": 50,
+   "pca_variance": 0.9893,
+   "qnn_acc": [
+    0.9649,
+    0.00880000000000003
+   ],
+   "qnn_sens": [
+    0.9365333333333333,
+    0.013740936406713119
+   ],
+   "qnn_auc": [
+    0.9962333333333334,
+    0.0023352373184182384
+   ],
+   "logreg_acc": [
+    0.9795333333333334,
+    0.013398631770943383
+   ],
+   "train_seconds": 47.666666666666664
+  },
+  {
+   "entangler": "brick",
+   "init": "uniform",
+   "n_qubits": 10,
+   "n_features": 20,
+   "n_params": 62,
+   "pca_variance": 0.9958,
+   "qnn_acc": [
+    0.9737,
+    0.00880000000000003
+   ],
+   "qnn_sens": [
+    0.9444666666666667,
+    0.013740936406713119
+   ],
+   "qnn_auc": [
+    0.9981333333333332,
+    0.0006658328118479744
+   ],
+   "logreg_acc": [
+    0.9766,
+    0.013387680904473327
+   ],
+   "train_seconds": 144.33333333333334
+  },
+  {
+   "entangler": "brick",
+   "init": "uniform",
+   "n_qubits": 12,
+   "n_features": 24,
+   "n_params": 74,
+   "pca_variance": 0.9989,
+   "qnn_acc": [
+    0.9444333333333333,
+    0.013398631770943383
+   ],
+   "qnn_sens": [
+    0.9127000000000001,
+    0.049599697579723226
+   ],
+   "qnn_auc": [
+    0.9874,
+    0.0048774993593029
+   ],
+   "logreg_acc": [
+    0.9707666666666667,
+    0.013442222038537177
+   ],
+   "train_seconds": 702.6
+  }
+ ],
+ "runs": [
+  {
+   "n_qubits": 2,
+   "n_features": 4,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 14,
+   "pca_variance": 0.7922,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "precision": 0.9756,
+    "f1": 0.9639,
+    "auc": 0.997,
+    "missed_cancers": 2,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9286,
+    "specificity": 0.9861,
+    "precision": 0.975,
+    "f1": 0.9512,
+    "auc": 0.9977,
+    "missed_cancers": 3,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "best_epoch": 74,
+   "train_seconds": 5.6
+  },
+  {
+   "n_qubits": 2,
+   "n_features": 4,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 14,
+   "pca_variance": 0.796,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9386,
+    "sensitivity": 0.9762,
+    "specificity": 0.9167,
+    "precision": 0.8723,
+    "f1": 0.9213,
+    "auc": 0.9891,
+    "missed_cancers": 1,
+    "false_alarms": 6,
+    "confusion": {
+     "tn": 66,
+     "fp": 6,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9561,
+    "sensitivity": 0.9524,
+    "specificity": 0.9583,
+    "precision": 0.9302,
+    "f1": 0.9412,
+    "auc": 0.995,
+    "missed_cancers": 2,
+    "false_alarms": 3,
+    "confusion": {
+     "tn": 69,
+     "fp": 3,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 34,
+   "train_seconds": 2.7
+  },
+  {
+   "n_qubits": 2,
+   "n_features": 4,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 14,
+   "pca_variance": 0.7946,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9561,
+    "sensitivity": 0.9048,
+    "specificity": 0.9861,
+    "precision": 0.9744,
+    "f1": 0.9383,
+    "auc": 0.9947,
+    "missed_cancers": 4,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 4,
+     "tp": 38
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.996,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 73,
+   "train_seconds": 7.2
+  },
+  {
+   "n_qubits": 3,
+   "n_features": 6,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 20,
+   "pca_variance": 0.8872,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9762,
+    "specificity": 0.9861,
+    "precision": 0.9762,
+    "f1": 0.9762,
+    "auc": 0.999,
+    "missed_cancers": 1,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9286,
+    "specificity": 0.9861,
+    "precision": 0.975,
+    "f1": 0.9512,
+    "auc": 0.9967,
+    "missed_cancers": 3,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "best_epoch": 61,
+   "train_seconds": 8.5
+  },
+  {
+   "n_qubits": 3,
+   "n_features": 6,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 20,
+   "pca_variance": 0.8897,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "precision": 0.9756,
+    "f1": 0.9639,
+    "auc": 0.9964,
+    "missed_cancers": 2,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9474,
+    "sensitivity": 0.9524,
+    "specificity": 0.9444,
+    "precision": 0.9091,
+    "f1": 0.9302,
+    "auc": 0.995,
+    "missed_cancers": 2,
+    "false_alarms": 4,
+    "confusion": {
+     "tn": 68,
+     "fp": 4,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 49,
+   "train_seconds": 6.0
+  },
+  {
+   "n_qubits": 3,
+   "n_features": 6,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 20,
+   "pca_variance": 0.8918,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.9977,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.996,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 45,
+   "train_seconds": 4.7
+  },
+  {
+   "n_qubits": 4,
+   "n_features": 8,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 26,
+   "pca_variance": 0.927,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9286,
+    "specificity": 0.9861,
+    "precision": 0.975,
+    "f1": 0.9512,
+    "auc": 0.9911,
+    "missed_cancers": 3,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "precision": 0.9756,
+    "f1": 0.9639,
+    "auc": 0.9977,
+    "missed_cancers": 2,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 54,
+   "train_seconds": 8.5
+  },
+  {
+   "n_qubits": 4,
+   "n_features": 8,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 26,
+   "pca_variance": 0.9279,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.9964,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9561,
+    "sensitivity": 0.9524,
+    "specificity": 0.9583,
+    "precision": 0.9302,
+    "f1": 0.9412,
+    "auc": 0.9957,
+    "missed_cancers": 2,
+    "false_alarms": 3,
+    "confusion": {
+     "tn": 69,
+     "fp": 3,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 34,
+   "train_seconds": 6.3
+  },
+  {
+   "n_qubits": 4,
+   "n_features": 8,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 26,
+   "pca_variance": 0.9298,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9921,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.997,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 60,
+   "train_seconds": 8.5
+  },
+  {
+   "n_qubits": 5,
+   "n_features": 10,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 32,
+   "pca_variance": 0.9514,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9386,
+    "sensitivity": 0.9048,
+    "specificity": 0.9583,
+    "precision": 0.9268,
+    "f1": 0.9157,
+    "auc": 0.9904,
+    "missed_cancers": 4,
+    "false_alarms": 3,
+    "confusion": {
+     "tn": 69,
+     "fp": 3,
+     "fn": 4,
+     "tp": 38
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.9974,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 72,
+   "train_seconds": 12.9
+  },
+  {
+   "n_qubits": 5,
+   "n_features": 10,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 32,
+   "pca_variance": 0.9521,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9912,
+    "sensitivity": 0.9762,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.988,
+    "auc": 0.9967,
+    "missed_cancers": 1,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9954,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 33,
+   "train_seconds": 7.8
+  },
+  {
+   "n_qubits": 5,
+   "n_features": 10,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 32,
+   "pca_variance": 0.9533,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9762,
+    "specificity": 0.9861,
+    "precision": 0.9762,
+    "f1": 0.9762,
+    "auc": 0.9967,
+    "missed_cancers": 1,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.9977,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 55,
+   "train_seconds": 11.1
+  },
+  {
+   "n_qubits": 6,
+   "n_features": 12,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 38,
+   "pca_variance": 0.9712,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9762,
+    "specificity": 0.9861,
+    "precision": 0.9762,
+    "f1": 0.9762,
+    "auc": 0.996,
+    "missed_cancers": 1,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9912,
+    "sensitivity": 0.9762,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.988,
+    "auc": 0.997,
+    "missed_cancers": 1,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "best_epoch": 46,
+   "train_seconds": 13.2
+  },
+  {
+   "n_qubits": 6,
+   "n_features": 12,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 38,
+   "pca_variance": 0.9717,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9934,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9957,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 57,
+   "train_seconds": 15.2
+  },
+  {
+   "n_qubits": 6,
+   "n_features": 12,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 38,
+   "pca_variance": 0.9729,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9912,
+    "sensitivity": 0.9762,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.988,
+    "auc": 0.997,
+    "missed_cancers": 1,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.9977,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 24,
+   "train_seconds": 8.0
+  },
+  {
+   "n_qubits": 8,
+   "n_features": 16,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 50,
+   "pca_variance": 0.9893,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.997,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9912,
+    "sensitivity": 0.9762,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.988,
+    "auc": 0.998,
+    "missed_cancers": 1,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "best_epoch": 49,
+   "train_seconds": 37.5
+  },
+  {
+   "n_qubits": 8,
+   "n_features": 16,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 50,
+   "pca_variance": 0.9895,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9762,
+    "specificity": 0.9722,
+    "precision": 0.9535,
+    "f1": 0.9647,
+    "auc": 0.9947,
+    "missed_cancers": 1,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9967,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 73,
+   "train_seconds": 49.4
+  },
+  {
+   "n_qubits": 8,
+   "n_features": 16,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 50,
+   "pca_variance": 0.9903,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9286,
+    "specificity": 0.9861,
+    "precision": 0.975,
+    "f1": 0.9512,
+    "auc": 0.997,
+    "missed_cancers": 3,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9762,
+    "specificity": 0.9861,
+    "precision": 0.9762,
+    "f1": 0.9762,
+    "auc": 0.9983,
+    "missed_cancers": 1,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "best_epoch": 33,
+   "train_seconds": 27.1
+  },
+  {
+   "n_qubits": 10,
+   "n_features": 20,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 62,
+   "pca_variance": 0.9958,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9762,
+    "specificity": 0.9722,
+    "precision": 0.9535,
+    "f1": 0.9647,
+    "auc": 0.9967,
+    "missed_cancers": 1,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9912,
+    "sensitivity": 0.9762,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.988,
+    "auc": 0.998,
+    "missed_cancers": 1,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "best_epoch": 52,
+   "train_seconds": 207.6
+  },
+  {
+   "n_qubits": 10,
+   "n_features": 20,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 62,
+   "pca_variance": 0.9959,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9298,
+    "sensitivity": 0.9524,
+    "specificity": 0.9167,
+    "precision": 0.8696,
+    "f1": 0.9091,
+    "auc": 0.9888,
+    "missed_cancers": 2,
+    "false_alarms": 6,
+    "confusion": {
+     "tn": 66,
+     "fp": 6,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9947,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 49,
+   "train_seconds": 198.0
+  },
+  {
+   "n_qubits": 10,
+   "n_features": 20,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 62,
+   "pca_variance": 0.9961,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9762,
+    "specificity": 0.9722,
+    "precision": 0.9535,
+    "f1": 0.9647,
+    "auc": 0.9987,
+    "missed_cancers": 1,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "precision": 0.9756,
+    "f1": 0.9639,
+    "auc": 0.9954,
+    "missed_cancers": 2,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 46,
+   "train_seconds": 197.5
+  },
+  {
+   "n_qubits": 12,
+   "n_features": 24,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 74,
+   "pca_variance": 0.9989,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9211,
+    "sensitivity": 0.9524,
+    "specificity": 0.9028,
+    "precision": 0.8511,
+    "f1": 0.8989,
+    "auc": 0.9792,
+    "missed_cancers": 2,
+    "false_alarms": 7,
+    "confusion": {
+     "tn": 65,
+     "fp": 7,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.9977,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 60,
+   "train_seconds": 1491.3
+  },
+  {
+   "n_qubits": 12,
+   "n_features": 24,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 74,
+   "pca_variance": 0.999,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9561,
+    "sensitivity": 0.9286,
+    "specificity": 0.9722,
+    "precision": 0.9512,
+    "f1": 0.9398,
+    "auc": 0.9914,
+    "missed_cancers": 3,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "precision": 0.9756,
+    "f1": 0.9639,
+    "auc": 0.9964,
+    "missed_cancers": 2,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 40,
+   "train_seconds": 1062.7
+  },
+  {
+   "n_qubits": 12,
+   "n_features": 24,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "ring",
+   "n_params": 74,
+   "pca_variance": 0.9989,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9035,
+    "sensitivity": 0.8571,
+    "specificity": 0.9306,
+    "precision": 0.878,
+    "f1": 0.8675,
+    "auc": 0.9742,
+    "missed_cancers": 6,
+    "false_alarms": 5,
+    "confusion": {
+     "tn": 67,
+     "fp": 5,
+     "fn": 6,
+     "tp": 36
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9561,
+    "sensitivity": 0.9286,
+    "specificity": 0.9722,
+    "precision": 0.9512,
+    "f1": 0.9398,
+    "auc": 0.9947,
+    "missed_cancers": 3,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "best_epoch": 49,
+   "train_seconds": 996.8
+  },
+  {
+   "n_qubits": 2,
+   "n_features": 4,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 14,
+   "pca_variance": 0.7922,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9762,
+    "specificity": 0.9583,
+    "precision": 0.9318,
+    "f1": 0.9535,
+    "auc": 0.998,
+    "missed_cancers": 1,
+    "false_alarms": 3,
+    "confusion": {
+     "tn": 69,
+     "fp": 3,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9286,
+    "specificity": 0.9861,
+    "precision": 0.975,
+    "f1": 0.9512,
+    "auc": 0.9977,
+    "missed_cancers": 3,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "best_epoch": 74,
+   "train_seconds": 4.6
+  },
+  {
+   "n_qubits": 2,
+   "n_features": 4,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 14,
+   "pca_variance": 0.796,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.996,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9561,
+    "sensitivity": 0.9524,
+    "specificity": 0.9583,
+    "precision": 0.9302,
+    "f1": 0.9412,
+    "auc": 0.995,
+    "missed_cancers": 2,
+    "false_alarms": 3,
+    "confusion": {
+     "tn": 69,
+     "fp": 3,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 63,
+   "train_seconds": 4.4
+  },
+  {
+   "n_qubits": 2,
+   "n_features": 4,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 14,
+   "pca_variance": 0.7946,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9954,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.996,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 60,
+   "train_seconds": 4.2
+  },
+  {
+   "n_qubits": 3,
+   "n_features": 6,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 20,
+   "pca_variance": 0.8872,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "precision": 0.9756,
+    "f1": 0.9639,
+    "auc": 0.9983,
+    "missed_cancers": 2,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9286,
+    "specificity": 0.9861,
+    "precision": 0.975,
+    "f1": 0.9512,
+    "auc": 0.9967,
+    "missed_cancers": 3,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "best_epoch": 67,
+   "train_seconds": 6.7
+  },
+  {
+   "n_qubits": 3,
+   "n_features": 6,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 20,
+   "pca_variance": 0.8897,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9967,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9474,
+    "sensitivity": 0.9524,
+    "specificity": 0.9444,
+    "precision": 0.9091,
+    "f1": 0.9302,
+    "auc": 0.995,
+    "missed_cancers": 2,
+    "false_alarms": 4,
+    "confusion": {
+     "tn": 68,
+     "fp": 4,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 42,
+   "train_seconds": 4.4
+  },
+  {
+   "n_qubits": 3,
+   "n_features": 6,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 20,
+   "pca_variance": 0.8918,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "precision": 0.9756,
+    "f1": 0.9639,
+    "auc": 0.9983,
+    "missed_cancers": 2,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.996,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 70,
+   "train_seconds": 7.1
+  },
+  {
+   "n_qubits": 4,
+   "n_features": 8,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 26,
+   "pca_variance": 0.927,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9762,
+    "specificity": 0.9722,
+    "precision": 0.9535,
+    "f1": 0.9647,
+    "auc": 0.9967,
+    "missed_cancers": 1,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "precision": 0.9756,
+    "f1": 0.9639,
+    "auc": 0.9977,
+    "missed_cancers": 2,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 47,
+   "train_seconds": 7.8
+  },
+  {
+   "n_qubits": 4,
+   "n_features": 8,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 26,
+   "pca_variance": 0.9279,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9561,
+    "sensitivity": 0.9524,
+    "specificity": 0.9583,
+    "precision": 0.9302,
+    "f1": 0.9412,
+    "auc": 0.9927,
+    "missed_cancers": 2,
+    "false_alarms": 3,
+    "confusion": {
+     "tn": 69,
+     "fp": 3,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9561,
+    "sensitivity": 0.9524,
+    "specificity": 0.9583,
+    "precision": 0.9302,
+    "f1": 0.9412,
+    "auc": 0.9957,
+    "missed_cancers": 2,
+    "false_alarms": 3,
+    "confusion": {
+     "tn": 69,
+     "fp": 3,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 74,
+   "train_seconds": 10.3
+  },
+  {
+   "n_qubits": 4,
+   "n_features": 8,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 26,
+   "pca_variance": 0.9298,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9474,
+    "sensitivity": 0.9048,
+    "specificity": 0.9722,
+    "precision": 0.95,
+    "f1": 0.9268,
+    "auc": 0.994,
+    "missed_cancers": 4,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 4,
+     "tp": 38
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.997,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 79,
+   "train_seconds": 8.8
+  },
+  {
+   "n_qubits": 5,
+   "n_features": 10,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 32,
+   "pca_variance": 0.9514,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9561,
+    "sensitivity": 0.9048,
+    "specificity": 0.9861,
+    "precision": 0.9744,
+    "f1": 0.9383,
+    "auc": 0.996,
+    "missed_cancers": 4,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 4,
+     "tp": 38
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.9974,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 33,
+   "train_seconds": 6.3
+  },
+  {
+   "n_qubits": 5,
+   "n_features": 10,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 32,
+   "pca_variance": 0.9521,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "precision": 0.9756,
+    "f1": 0.9639,
+    "auc": 0.995,
+    "missed_cancers": 2,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9954,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 42,
+   "train_seconds": 8.6
+  },
+  {
+   "n_qubits": 5,
+   "n_features": 10,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 32,
+   "pca_variance": 0.9533,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9474,
+    "sensitivity": 0.881,
+    "specificity": 0.9861,
+    "precision": 0.9737,
+    "f1": 0.925,
+    "auc": 0.9967,
+    "missed_cancers": 5,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 5,
+     "tp": 37
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.9977,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 77,
+   "train_seconds": 13.5
+  },
+  {
+   "n_qubits": 6,
+   "n_features": 12,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 38,
+   "pca_variance": 0.9712,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.999,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9912,
+    "sensitivity": 0.9762,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.988,
+    "auc": 0.997,
+    "missed_cancers": 1,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "best_epoch": 49,
+   "train_seconds": 13.6
+  },
+  {
+   "n_qubits": 6,
+   "n_features": 12,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 38,
+   "pca_variance": 0.9717,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "precision": 0.9756,
+    "f1": 0.9639,
+    "auc": 0.998,
+    "missed_cancers": 2,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9957,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 42,
+   "train_seconds": 12.7
+  },
+  {
+   "n_qubits": 6,
+   "n_features": 12,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 38,
+   "pca_variance": 0.9729,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.9987,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.9977,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 43,
+   "train_seconds": 12.6
+  },
+  {
+   "n_qubits": 8,
+   "n_features": 16,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 50,
+   "pca_variance": 0.9893,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9286,
+    "specificity": 0.9861,
+    "precision": 0.975,
+    "f1": 0.9512,
+    "auc": 0.9967,
+    "missed_cancers": 3,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9912,
+    "sensitivity": 0.9762,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.988,
+    "auc": 0.998,
+    "missed_cancers": 1,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "best_epoch": 61,
+   "train_seconds": 42.8
+  },
+  {
+   "n_qubits": 8,
+   "n_features": 16,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 50,
+   "pca_variance": 0.9895,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9561,
+    "sensitivity": 0.9524,
+    "specificity": 0.9583,
+    "precision": 0.9302,
+    "f1": 0.9412,
+    "auc": 0.9937,
+    "missed_cancers": 2,
+    "false_alarms": 3,
+    "confusion": {
+     "tn": 69,
+     "fp": 3,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9967,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 70,
+   "train_seconds": 49.8
+  },
+  {
+   "n_qubits": 8,
+   "n_features": 16,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 50,
+   "pca_variance": 0.9903,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9286,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.963,
+    "auc": 0.9983,
+    "missed_cancers": 3,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9762,
+    "specificity": 0.9861,
+    "precision": 0.9762,
+    "f1": 0.9762,
+    "auc": 0.9983,
+    "missed_cancers": 1,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "best_epoch": 79,
+   "train_seconds": 50.4
+  },
+  {
+   "n_qubits": 10,
+   "n_features": 20,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 62,
+   "pca_variance": 0.9958,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9286,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.963,
+    "auc": 0.9983,
+    "missed_cancers": 3,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9912,
+    "sensitivity": 0.9762,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.988,
+    "auc": 0.998,
+    "missed_cancers": 1,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 1,
+     "tp": 41
+    }
+   },
+   "best_epoch": 70,
+   "train_seconds": 255.8
+  },
+  {
+   "n_qubits": 10,
+   "n_features": 20,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 62,
+   "pca_variance": 0.9959,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.9987,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9947,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 35,
+   "train_seconds": 90.1
+  },
+  {
+   "n_qubits": 10,
+   "n_features": 20,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 62,
+   "pca_variance": 0.9961,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9649,
+    "sensitivity": 0.9524,
+    "specificity": 0.9722,
+    "precision": 0.9524,
+    "f1": 0.9524,
+    "auc": 0.9974,
+    "missed_cancers": 2,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "precision": 0.9756,
+    "f1": 0.9639,
+    "auc": 0.9954,
+    "missed_cancers": 2,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 51,
+   "train_seconds": 87.1
+  },
+  {
+   "n_qubits": 12,
+   "n_features": 24,
+   "seed": 0,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 74,
+   "pca_variance": 0.9989,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9561,
+    "sensitivity": 0.9286,
+    "specificity": 0.9722,
+    "precision": 0.9512,
+    "f1": 0.9398,
+    "auc": 0.9884,
+    "missed_cancers": 3,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9825,
+    "sensitivity": 0.9524,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1": 0.9756,
+    "auc": 0.9977,
+    "missed_cancers": 2,
+    "false_alarms": 0,
+    "confusion": {
+     "tn": 72,
+     "fp": 0,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 61,
+   "train_seconds": 769.0
+  },
+  {
+   "n_qubits": 12,
+   "n_features": 24,
+   "seed": 1,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 74,
+   "pca_variance": 0.999,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9474,
+    "sensitivity": 0.9524,
+    "specificity": 0.9444,
+    "precision": 0.9091,
+    "f1": 0.9302,
+    "auc": 0.9917,
+    "missed_cancers": 2,
+    "false_alarms": 4,
+    "confusion": {
+     "tn": 68,
+     "fp": 4,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9737,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "precision": 0.9756,
+    "f1": 0.9639,
+    "auc": 0.9964,
+    "missed_cancers": 2,
+    "false_alarms": 1,
+    "confusion": {
+     "tn": 71,
+     "fp": 1,
+     "fn": 2,
+     "tp": 40
+    }
+   },
+   "best_epoch": 75,
+   "train_seconds": 823.3
+  },
+  {
+   "n_qubits": 12,
+   "n_features": 24,
+   "seed": 2,
+   "init": "uniform",
+   "entangler": "brick",
+   "n_params": 74,
+   "pca_variance": 0.9989,
+   "qnn": {
+    "threshold": 0.5,
+    "accuracy": 0.9298,
+    "sensitivity": 0.8571,
+    "specificity": 0.9722,
+    "precision": 0.9474,
+    "f1": 0.9,
+    "auc": 0.9821,
+    "missed_cancers": 6,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 6,
+     "tp": 36
+    }
+   },
+   "logreg_same_features": {
+    "threshold": 0.5,
+    "accuracy": 0.9561,
+    "sensitivity": 0.9286,
+    "specificity": 0.9722,
+    "precision": 0.9512,
+    "f1": 0.9398,
+    "auc": 0.9947,
+    "missed_cancers": 3,
+    "false_alarms": 2,
+    "confusion": {
+     "tn": 70,
+     "fp": 2,
+     "fn": 3,
+     "tp": 39
+    }
+   },
+   "best_epoch": 48,
+   "train_seconds": 515.5
+  }
+ ]
+}

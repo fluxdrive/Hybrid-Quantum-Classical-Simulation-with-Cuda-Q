@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+myenv/
+*:Zone.Identifier
+
+# Windows download metadata created when copying files into WSL
+*:Zone.Identifier
+
+# Local run outputs (merged results are committed; per-seed scratch files are not)
+runs_cudaq/
+*.log
+*.zip
+experiments/scaling_timing.json
+experiments/figures/simulation_timing.png
+
+# v1 outputs that are no longer produced
+benchmark_results.json
+hyperparameter_tuning_analysis.json
+hyperparameter_tuning_results.csv
+hyperparameter_tuning_results.json
+qnn_best_checkpoint.json
+qnn_training_history.json
